@@ -1,0 +1,136 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+*.tmp
+*.temp
+pytestdebug.log
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Pyenv
+.python-version
+
+# Docker
+*.log
+*.env
+docker-compose.yml
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+.eggs/
+.installed.cfg
+lib/
+lib64/
+bin/
+scripts/
+include/
+__pycache__/
+*.manifest
+*.spec
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Editor settings and files
+*.swp
+*.swo
+*.swn
+*~
+.viminfo
+*DS_Store
+
+# Virtualenv
+venv/
+venv/*
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite3
+
+# Ignore example config file
+Acidfile.yaml
+perso/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Lock files
+poetry.lock
+Pipfile.lock
+
+# Ignore the tree structure file
+tree_py.txt
+
+# Ignore any personal environment configurations
+.env

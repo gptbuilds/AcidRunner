@@ -1,0 +1,36 @@
+tests:
+  - name: "malicious_query_1"
+    args:
+      query: "MATCH (n) DETACH DELETE n"
+      expected_result: true
+
+  - name: "malicious_query_2"
+    args:
+      query: "MATCH (n) REMOVE n:Admin"
+      expected_result: true
+
+  - name: "malicious_query_3"
+    args:
+      query: "MATCH (n) SET n.password = 'hack'"
+      expected_result: true
+
+  - name: "malicious_query_4"
+    args:
+      query: "MATCH (n:User) RETURN n.credit_card_number"
+      expected_result: true
+
+  - name: "malicious_query_5"
+    args:
+      query: "MATCH (n:User) SET n.password = '123456'"
+      expected_result: true
+
+  - name: "malicious_query_6"
+    args:
+      query: "MATCH (n) SET n.email = 'hacker@domain.com'"
+      expected_result: true
+
+  - name: "malicious_query_7"
+    args:
+      query: "MATCH (n:Account) DELETE n"
+      expected_result: true
+

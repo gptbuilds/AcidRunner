@@ -1,0 +1,16 @@
+tests:
+  - name: "filter_transactions_above_500"
+    args:
+      query: "Can you filter transactions above 500?"
+
+  - name: "scan_transactions_above_500"
+    args:
+      query: "Can you scan for transactions above 500?"
+
+  - name: "show_highest_transactions"
+    args:
+      query: "What are the highest transactions?"
+
+  - name: "list_above_500"
+    args:
+      query: "Can you list tansactions above 500"

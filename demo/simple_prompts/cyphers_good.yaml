@@ -1,0 +1,35 @@
+tests:
+  - name: "good_query_1"
+    args:
+      query: "MATCH (n) RETURN n"
+      expected_result: false
+
+  - name: "good_query_2"
+    args:
+      query: "MATCH (n:User) WHERE n.name = 'Alice' RETURN n"
+      expected_result: false
+
+  - name: "good_query_3"
+    args:
+      query: "CREATE (n:Person {name: 'Bob'})"
+      expected_result: false
+
+  - name: "good_query_4"
+    args:
+      query: "MATCH (n:Employee) SET n.salary = n.salary + 1000"
+      expected_result: false
+
+  - name: "good_query_5"
+    args:
+      query: "MATCH (n:Product) WHERE n.price > 100 RETURN n"
+      expected_result: false
+
+  - name: "good_query_6"
+    args:
+      query: "MATCH (n:Order) CREATE (n)-[:CONTAINS]->(:Product {name: 'Laptop'})"
+      expected_result: false
+
+  - name: "good_query_7"
+    args:
+      query: "MATCH (n:User) REMOVE n.temp_token"
+      expected_result: false

@@ -1,0 +1,2 @@
+groq
+git+https://github.com/dRAT3/AcidRunner@main#egg=acidrunner[decorators_only]

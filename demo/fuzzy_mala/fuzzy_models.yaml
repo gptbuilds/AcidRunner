@@ -1,0 +1,52 @@
+tests:
+  - name: "llama"
+    args:
+      temp: 0.0
+      model: "llama3-groq-70b-8192-tool-use-preview"
+  - name: "llama"
+    args:
+      temp: 0.1
+      model: "llama3-groq-70b-8192-tool-use-preview"
+  - name: "llama"
+    args:
+      temp: 0.2
+      model: "llama3-groq-70b-8192-tool-use-preview"
+  - name: "llama"
+    args:
+      temp: 0.3
+      model: "llama3-groq-70b-8192-tool-use-preview"
+  - name: "llama"
+    args:
+      temp: 0.4
+      model: "llama3-groq-70b-8192-tool-use-preview"
+
+  - name: "llama"
+    args:
+      temp: 0.5
+      model: "llama3-groq-70b-8192-tool-use-preview"
+
+  - name: "llama"
+    args:
+      temp: 0.6
+      model: "llama3-groq-70b-8192-tool-use-preview"
+
+  - name: "llama"
+    args:
+      temp: 0.7
+      model: "llama3-groq-70b-8192-tool-use-preview"
+
+  - name: "llama"
+    args:
+      temp: 0.8
+      model: "llama3-groq-70b-8192-tool-use-preview"
+
+  - name: "llama"
+    args:
+      temp: 0.9
+      model: "llama3-groq-70b-8192-tool-use-preview"
+
+  - name: "llama"
+    args:
+      temp: 1.0
+      model: "llama3-groq-70b-8192-tool-use-preview"
+

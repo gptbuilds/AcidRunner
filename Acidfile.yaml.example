@@ -1,0 +1,22 @@
+# Configuration file for the settings
+systems_under_test:
+  - name: security-filter
+    entrypoint_benchmarks: demos/security-filter/benches.py
+    entrypoint_tests: demos/security/tests.py
+    runs: 3
+    tracemalloc_enabled: true
+  
+# Buckets are used to set up a rate limit for different APIs, just set the rate
+# limit in requests/s  in rpm. You can set up your bucket together with your tests.
+buckets:
+  - name: bucket_groq
+    rpm: 30
+  - name: bucket_openai
+    rpm: 500
+  - name: bucket_custom_fast
+    rpm: 100000
+  - name: bucket_custom_slow
+    rpm: 10
+
+file_settings:
+  - data_dir: /home/user/dev/py/groq
